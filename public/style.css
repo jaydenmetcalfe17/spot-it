@@ -38,7 +38,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* Position images in a circle */
+/* Position images in card */
 #pic1 { height: 13%; width: 13%; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(0deg) translate(83px) rotate(0deg); }
 #pic2 { height: 22%; width: 22%; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(80deg) translate(80px) rotate(-81deg); }
 #pic3 { height: 20%; width: 20%; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg) translate(-18px) rotate(-17deg); }
@@ -50,23 +50,20 @@ body {
 
 
 @media (max-width: 600px) {
-    /* Ensure that the cards don’t resize below 300px */
     .gameboard {
-        overflow: hidden; /* Prevent overflowing content from being visible */
-        justify-content: center;  /* Center the cards within the container */
+        overflow: hidden; 
+        justify-content: center; 
     }
 
     .card {
-        /* No resizing for cards */
         height: 300px;
         width: 300px;
     }
 }
 
 
-
 .popup-overlay {
-    display: none; /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -76,9 +73,8 @@ body {
     z-index: 999;
 }
 
-/* Style for the pop-up box */
 .popup {
-    display: none; /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -90,7 +86,6 @@ body {
     z-index: 1000;
 }
 
-/* Close button style */
 .popup button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -100,3 +95,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+h1 {
+    font-size: 40px;
+    color: #a31414;
+    font-weight: bold;
+    font: 'Verdana';
+}
+

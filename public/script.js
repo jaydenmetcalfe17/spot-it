@@ -233,7 +233,6 @@ function showPopup(status) {
     overlay.style.display = "block";
 
     closePopupButton.addEventListener("click", hidePopup);
-    overlay.addEventListener("click", hidePopup);
 }
 
 function hidePopup() {
