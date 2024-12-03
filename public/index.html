@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot It!</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="gameboard">
+        <div class="player">
+            <div class="card" id="player-card">
+                <img id="pic1" class="circle-img" src="/assets/images/freeze.png" alt="picture1">
+                <img id="pic2" class="circle-img" src="/assets/images/freeze.png" alt="picture2">
+                <img id="pic3" class="circle-img" src="/assets/images/freeze.png" alt="picture3">
+                <img id="pic4" class="circle-img" src="/assets/images/freeze.png" alt="picture4">
+                <img id="pic5" class="circle-img" src="/assets/images/freeze.png" alt="picture5">
+                <img id="pic6" class="circle-img" src="/assets/images/freeze.png" alt="picture6">
+                <img id="pic7" class="circle-img" src="/assets/images/freeze.png" alt="picture7">
+                <img id="pic8" class="circle-img" src="/assets/images/freeze.png" alt="picture8">
+            </div>
+            <div><h2>Your Card</h2></div>
+        </div>
+
+        <div class="card" id="game-card">
+            <img id="pic1" class="circle-img" src="/assets/images/freeze.png" alt="picture1">
+            <img id="pic2" class="circle-img" src="/assets/images/freeze.png" alt="picture2">
+            <img id="pic3" class="circle-img" src="/assets/images/freeze.png" alt="picture3">
+            <img id="pic4" class="circle-img" src="/assets/images/freeze.png" alt="picture4">
+            <img id="pic5" class="circle-img" src="/assets/images/freeze.png" alt="picture5">
+            <img id="pic6" class="circle-img" src="/assets/images/freeze.png" alt="picture6">
+            <img id="pic7" class="circle-img" src="/assets/images/freeze.png" alt="picture7">
+            <img id="pic8" class="circle-img" src="/assets/images/freeze.png" alt="picture8"> 
+        </div>
+
+        <div class="player">
+            <div class="card" id="computer-card">
+                <img id="pic1" class="circle-img" src="/assets/images/freeze.png" alt="picture1">
+                <img id="pic2" class="circle-img" src="/assets/images/freeze.png" alt="picture2">
+                <img id="pic3" class="circle-img" src="/assets/images/freeze.png" alt="picture3">
+                <img id="pic4" class="circle-img" src="/assets/images/freeze.png" alt="picture4">
+                <img id="pic5" class="circle-img" src="/assets/images/freeze.png" alt="picture5">
+                <img id="pic6" class="circle-img" src="/assets/images/freeze.png" alt="picture6">
+                <img id="pic7" class="circle-img" src="/assets/images/freeze.png" alt="picture7">
+                <img id="pic8" class="circle-img" src="/assets/images/freeze.png" alt="picture8">
+            </div>
+            <div><h2>Computer's Card</h2></div>
+        </div>
+    </div>
+
+    
+    <button class="btn btn--new">🔄 New game</button>
+    
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <h2 id="check-text">You Win!</h2>
+        <button id="closePopup">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
