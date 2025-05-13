@@ -212,10 +212,10 @@ function computerWins() {
 function gameOver() {
     if (player_hand.length > computer_hand.length) {
         console.log("You Win!")
-        showPopup('You Win!')
+        showPopup(`You Win!`)
     } else {
-        console.log("You Lose :(")
-        showPopup('You Lose :(')
+        console.log('You Lose :(')
+        showPopup(`You Lose :(`)
     }
 }
 
@@ -228,8 +228,9 @@ btnNew.addEventListener('click', function(){
 function showPopup(status) {
 
     document.getElementById('check-text').textContent = status;
+    document.getElementById('score').textContent = player_hand.length + " - " + computer_hand.length;
 
-    popup.style.display = "block";
+    popup.style.display = "flex";
     overlay.style.display = "block";
 
     closePopupButton.addEventListener("click", hidePopup);
