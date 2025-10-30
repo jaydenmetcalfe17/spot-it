@@ -217,6 +217,7 @@ function gameOver() {
         console.log('You Lose :(')
         showPopup(`You Lose :(`)
     }
+    clearInterval(countdownInterval); // Stop the countdown
 }
 
 btnNew.addEventListener('click', function(){
